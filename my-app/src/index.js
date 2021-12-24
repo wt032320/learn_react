@@ -1,66 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-class Square extends React.Component {
-  render() {
-    return (
-      <button className="square">
-        {/* TODO */}
-      </button>
-    );
-  }
+import * as React from 'react'
+import ReactDom from 'react-dom'
+
+import List from './five'
+import Form from './four'
+// import Gallery1 from './one'
+// import Gallery3 from './three'
+// import Gallery2 from './two'
+
+function App() {
+  return (
+    <>
+      {/* <Gallery1 />
+      <Gallery2 />
+      <Gallery3 /> */}
+      <Form />
+      <List />
+    </>
+  );
 }
 
-class Board extends React.Component {
-  renderSquare(i) {
-    return <Square />;
-  }
-
-  render() {
-    const status = 'Next player: X';
-
-    return (
-      <div>
-        <div className="status">{status}</div>
-        <div className="board-row">
-          {this.renderSquare(0)}
-          {this.renderSquare(1)}
-          {this.renderSquare(2)}
-        </div>
-        <div className="board-row">
-          {this.renderSquare(3)}
-          {this.renderSquare(4)}
-          {this.renderSquare(5)}
-        </div>
-        <div className="board-row">
-          {this.renderSquare(6)}
-          {this.renderSquare(7)}
-          {this.renderSquare(8)}
-        </div>
-      </div>
-    );
-  }
-}
-
-class Game extends React.Component {
-  render() {
-    return (
-      <div className="game">
-        <div className="game-board">
-          <Board />
-        </div>
-        <div className="game-info">
-          <div>{/* status */}</div>
-          <ol>{/* TODO */}</ol>
-        </div>
-      </div>
-    );
-  }
-}
-
-// ========================================
-
-ReactDOM.render(
-  <Game />,
-  document.getElementById('root')
-);
+ReactDom.render(App(), document.getElementById('root'))
