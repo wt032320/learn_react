@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-undef
 module.exports = {
   // 为我们提供运行环境，一个环境定义了一组预定义的全局变量
   env: {
@@ -48,5 +49,6 @@ module.exports = {
       },
     ],
     'no-useless-escape': 2,
+    'react/prop-types': 'off',
   },
-};
+}
