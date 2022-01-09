@@ -52,8 +52,23 @@ const recipes = [{
   ingredients: ['chickpeas', 'olive oil', 'garlic cloves', 'lemon', 'tahini'],
 }]
 
+const stories = [{
+  id: 'c1',
+  label: 'Create Story',
+}, {
+  id: 'c2',
+  label: 'Create Story',
+}, {
+  id: 'c3',
+  label: 'Create Story',
+}, {
+  id: 'c4',
+  label: 'Create Story',
+}]
+
 export {
   people,
   peopleInfo,
   recipes,
+  stories,
 }
