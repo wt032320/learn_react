@@ -51,5 +51,6 @@ module.exports = {
     'no-useless-escape': 2,
     'react/prop-types': 'off',
     'no-plusplus': 'off',
+    'react/jsx-no-bind': ['error', { ignoreDOMComponents: true }],
   },
 }
