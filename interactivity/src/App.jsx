@@ -4,11 +4,13 @@ import React from 'react'
 // import ToolBar from './Responding/ToolBar'
 // import ToolSide from './Responding/ToolSide'
 // import LightSwitch from './Responding/LightSwitch'
-import Gallery from './State/Gallery'
+// import Gallery from './State/Gallery'
+// import Form from './State/Form';
+import FeedbackForm from './State/FeedbackForm';
 
 function App() {
   return (
-    <Gallery />
+    <FeedbackForm />
   )
 }
 
